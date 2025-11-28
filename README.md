@@ -1,3 +1,5 @@
+[![Python package](https://github.com/Cyclo-Club-de-Grand-Lieu/members-card/actions/workflows/python-package.yml/badge.svg)](https://github.com/Cyclo-Club-de-Grand-Lieu/members-card/actions/workflows/python-package.yml)
+
 # Générateur de cartes d'adhérents
 
 Outil de génération de cartes d'adhérents à partir du tableau (format CSV) des adhérents.

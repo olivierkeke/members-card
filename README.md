@@ -64,7 +64,7 @@ options:
 
 Par exemple, la commande
 ```shell
-members-card tests/resources/adherents.csv cartes-adherents.pdf -n Nom Prénom -c1 255 255 255 -c2 0 166 82 -p a4 -q "https://github.com/olivierkeke/members-card" -l tests/resources/logo.svg -t "SAISON 2025 - 2026" -f1 "Mon adresse partie 1" -f2 "Mon adresse partie 2"
+members-card tests/resources/adherents.csv cartes-adherents.pdf -n Nom Prénom -c1 255 255 255 -c2 0 166 82 -p a4 -q "https://github.com/Cyclo-Club-de-Grand-Lieu/members-card" -l tests/resources/logo.svg -t "SAISON 2025 - 2026" -f1 "Mon adresse partie 1" -f2 "Mon adresse partie 2"
 ```
 génère le document suivant :
 

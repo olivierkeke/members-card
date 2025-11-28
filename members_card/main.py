@@ -15,6 +15,7 @@ def create_parser() -> ArgumentParser:
         "-n",
         required=True,
         nargs="+",
+        type=str,
         default=[],
         help="Columns of the CSV file to use as name",
     )
@@ -25,7 +26,7 @@ def create_parser() -> ArgumentParser:
         "--background-color-1",
         "-c1",
         nargs=3,
-        type=tuple[int, int, int],
+        type=int,
         default=(0, 166, 82),
         metavar=("RED", "GREEN", "BLUE"),
         help="Background color of the bottom left angle",
@@ -34,7 +35,7 @@ def create_parser() -> ArgumentParser:
         "--background-color-2",
         "-c2",
         nargs=3,
-        type=tuple[int, int, int],
+        type=int,
         default=(255, 255, 255),
         metavar=("RED", "GREEN", "BLUE"),
         help="Background color of the top right angle",
@@ -64,9 +65,9 @@ def create_parser() -> ArgumentParser:
 
 
 def process_args(args: Namespace):
-    members_df = pd.read_csv(args.memebers_csv)
+    members_df = pd.read_csv(args.members_csv)
     names = [" ".join(member[args.name_columns]) for _, member in members_df.iterrows()]
-
+    print(args.background_color_1)
     pdf = generate_cards(
         names,
         background_color_1=args.background_color_1,

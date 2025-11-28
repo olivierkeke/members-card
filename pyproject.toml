@@ -1,0 +1,24 @@
+[project]
+name = "members-card"
+description = "Generation of members cards"
+readme = "README.md"
+dynamic = ["version"]
+
+dependencies = [
+    "fpdf2",
+    "pandas",
+    "qrcode"
+]
+
+authors = [
+    {name = "hollysaiqs", email="hollysaiqs@famillemarceau.fr"}
+]
+
+[project.scripts]
+members-card = "members_card.main:cli"
+
+[tool.pytest.ini_options]
+pythonpath = "."
+addopts = [
+    "--import-mode=importlib",
+]
